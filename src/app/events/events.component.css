@@ -1,0 +1,11 @@
+h4 {
+  margin: 0;
+}
+
+.newlines {
+    white-space: pre-wrap;
+}
+
+.events {
+  padding-top: 20px;
+}

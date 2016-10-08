@@ -4,10 +4,15 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { EventsComponent } from './events/events.component';
+
+import { NewLinePipe } from './shared/new-line.pipe.ts';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    EventsComponent,
+    NewLinePipe
   ],
   imports: [
     BrowserModule,

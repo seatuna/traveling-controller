@@ -1,0 +1,11 @@
+<div class="container" *ngFor="let event of events">
+  <div class="events">
+    <h4>{{event.name}}</h4>
+    Venue: {{event.venue}}<br/>
+    {{event.address}}<br/>
+    {{event.location}} {{event.zip}}<br/>
+    {{event.day}} from {{event.start}} to {{event.end}}, {{event.recurrence}}<br/>
+    Fee: {{event.fee}}<br/>
+    <span class="newlines">{{event.comments | newLine }}</span>
+  </div>
+</div>
