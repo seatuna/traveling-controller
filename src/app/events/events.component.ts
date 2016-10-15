@@ -8,6 +8,10 @@ import { Component, OnInit } from '@angular/core';
 export class EventsComponent implements OnInit {
 
   events: Array<any>;
+  allEvents: Array<any>;
+  filteredEvents: Array<any>;
+  filterDay: string = '';
+  public status: { isopen: boolean } = { isopen: false };
 
   constructor() { }
 
@@ -87,6 +91,20 @@ export class EventsComponent implements OnInit {
         'Guilty Gear XrdR @ ~8PM - $3 entry fee']
       }
     ];
+
+    this.allEvents = this.events;
   }
 
+  filterByDay(day: string) {
+    this.filterDay = day;
+    if (day !== '') {
+      this.filteredEvents = this.allEvents.filter((obj) => {
+        if (obj.day === day || day === '') {
+          return true;
+        }});
+      this.events = this.filteredEvents;
+    } else {
+      this.events = this.allEvents;
+    }
+  }
 }
