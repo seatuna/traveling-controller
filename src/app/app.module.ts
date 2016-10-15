@@ -6,7 +6,9 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { EventsComponent } from './events/events.component';
 
-import { NewLinePipe } from './shared/new-line.pipe.ts';
+import { NewLinePipe } from './shared/new-line.pipe';
+
+import { DropdownModule } from 'ng2-bootstrap/components/dropdown';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,8 @@ import { NewLinePipe } from './shared/new-line.pipe.ts';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    DropdownModule
   ],
   providers: [],
   bootstrap: [AppComponent]

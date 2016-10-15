@@ -1,5 +1,17 @@
-h4 {
+h4, h5 {
   margin: 0;
+}
+
+.btn-primary {
+  background-color: #c72732;
+  border: none;
+  margin-top: 20px;
+}
+
+.btn-primary:hover,
+.open>.dropdown-toggle.btn-primary:hover,
+.open>.dropdown-toggle.btn-primary:focus {
+  background-color: #ff0000;
 }
 
 .newlines {
@@ -7,6 +19,7 @@ h4 {
 }
 
 .events {
-  color: #77313b;
-  padding-top: 20px;
+  color: #c72732;
+  margin-top: 20px;
+  padding: 0;
 }
