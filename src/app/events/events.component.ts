@@ -29,7 +29,8 @@ export class EventsComponent implements OnInit {
         fee: 5,
         games: 'Street Fighter 5, Guilty Gear',
         recurrence: 'Bi-Weekly',
-        comments: null
+        comments: null,
+        image: '../../assets/El-Taller.jpg'
       },
       {
         name: 'Platinum City Gaming',
@@ -43,7 +44,8 @@ export class EventsComponent implements OnInit {
         fee: 5,
         games: 'Street Fighter 5 and more!',
         recurrence: 'Weekly',
-        comments: null
+        comments: null,
+        image: './../../assets/PCG.jpg'
       },
       {
         name: 'Fighters on the Hill (NUFGC)',
@@ -57,7 +59,8 @@ export class EventsComponent implements OnInit {
         fee: 5,
         games: 'Street Fighter 5, Marvel',
         recurrence: 'Weekly',
-        comments: null
+        comments: null,
+        image: './../../assets/NUFGC.jpg'
       },
       {
         name: 'Fight Night',
@@ -71,25 +74,26 @@ export class EventsComponent implements OnInit {
         fee: 5,
         games: 'Street Fighter 5 and more!',
         recurrence: 'Weekly',
-        comments: null
+        comments: null,
+        image: './../../assets/GUTS.PNG'
       },
-      {
-        name: 'Fenway Fight Night',
-        venue: 'International Village, Rooms 14 - 18',
-        address: '1155-1175 Tremont St',
-        location: 'Boston, MA',
-        zip: '02120',
-        day: 'October 15, 2016',
-        start: '1pm',
-        end: '11pm',
-        fee: 0,
-        games: 'Street Fighter 5, Marvel',
-        recurrence: 'Weekly',
-        comments: ['BlazBlue CF @ 3PM - $3 entry fee',
-        'Food break and Casuals on stream @ ~5PM',
-        'KoF XIV @ ~6PM - $3 entry fee',
-        'Guilty Gear XrdR @ ~8PM - $3 entry fee']
-      }
+      // {
+      //   name: 'Fenway Fight Night',
+      //   venue: 'International Village, Rooms 14 - 18',
+      //   address: '1155-1175 Tremont St',
+      //   location: 'Boston, MA',
+      //   zip: '02120',
+      //   day: 'October 15, 2016',
+      //   start: '1pm',
+      //   end: '11pm',
+      //   fee: 0,
+      //   games: 'Street Fighter 5, Marvel',
+      //   recurrence: 'Weekly',
+      //   comments: ['BlazBlue CF @ 3PM - $3 entry fee',
+      //   'Food break and Casuals on stream @ ~5PM',
+      //   'KoF XIV @ ~6PM - $3 entry fee',
+      //   'Guilty Gear XrdR @ ~8PM - $3 entry fee']
+      // }
     ];
 
     this.allEvents = this.events;
