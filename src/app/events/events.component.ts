@@ -30,7 +30,7 @@ export class EventsComponent implements OnInit {
         games: 'Street Fighter 5, Guilty Gear',
         recurrence: 'Bi-Weekly',
         comments: null,
-        image: '../../assets/El-Taller.jpg'
+        image: 'https://raw.githubusercontent.com/seatuna/traveling-controller/master/src/assets/El-Taller.jpg'
       },
       {
         name: 'Platinum City Gaming',
@@ -45,7 +45,7 @@ export class EventsComponent implements OnInit {
         games: 'Street Fighter 5 and more!',
         recurrence: 'Weekly',
         comments: null,
-        image: './../../assets/PCG.jpg'
+        image: 'https://raw.githubusercontent.com/seatuna/traveling-controller/master/src/assets/PCG.jpg'
       },
       {
         name: 'Fighters on the Hill (NUFGC)',
@@ -60,7 +60,7 @@ export class EventsComponent implements OnInit {
         games: 'Street Fighter 5, Marvel',
         recurrence: 'Weekly',
         comments: null,
-        image: './../../assets/NUFGC.jpg'
+        image: 'https://raw.githubusercontent.com/seatuna/traveling-controller/master/src/assets/NUFGC.jpg'
       },
       {
         name: 'Fight Night',
@@ -75,7 +75,7 @@ export class EventsComponent implements OnInit {
         games: 'Street Fighter 5 and more!',
         recurrence: 'Weekly',
         comments: null,
-        image: './../../assets/GUTS.PNG'
+        image: 'https://github.com/seatuna/traveling-controller/blob/master/src/assets/GUTS.png?raw=true'
       },
       // {
       //   name: 'Fenway Fight Night',
