@@ -1,23 +1,22 @@
 <!-- Filter day -->
-<div class="btn-group btn-filter pull-right" dropdown [(isOpen)]="status.isopen">
-  <button id="single-button" type="button" class="btn btn-primary" dropdownToggle [disabled]="disabled">
-    <span *ngIf="filterDay === ''">Filter by Day <i class="caret"></i></span>
-    <span *ngIf="filterDay !== ''">Day: {{filterDay}} <i class="caret"></i></span>
-  </button>
-  <ul dropdownMenu role="menu" aria-labelledby="single-button">
-    <li role="menuitem" (click)="filterByDay('')"><a class="dropdown-item">All</a></li>
-    <li *ngFor="let event of allEvents" role="menuitem" (click)="filterByDay(event.day)">
-      <a class="dropdown-item">{{event.day}}</a>
-    </li>
-  </ul>
-</div>
-
-
-  <div class="row-container" *ngFor="let event of events">
-    <div class="venue-img pull-left">
+<div>
+  <div class="btn-group btn-filter" dropdown [(isOpen)]="status.isopen">
+    <button id="single-button" type="button" class="btn btn-primary" dropdownToggle [disabled]="disabled">
+      <span *ngIf="filterDay === ''">Filter by Day <i class="caret"></i></span>
+      <span *ngIf="filterDay !== ''">Day: {{filterDay}} <i class="caret"></i></span>
+    </button>
+    <ul dropdownMenu role="menu" aria-labelledby="single-button">
+      <li role="menuitem" (click)="filterByDay('')"><a class="dropdown-item">All</a></li>
+      <li *ngFor="let event of allEvents" role="menuitem" (click)="filterByDay(event.day)">
+        <a class="dropdown-item">{{event.day}}</a>
+      </li>
+    </ul>
+  </div>
+  <div class="row-container col-md-6 col-sm-12" *ngFor="let event of events">
+    <div class="venue-img">
       <img src={{event.image}} width="200px">
     </div>
-    <div class="events pull-right">
+    <div class="events col-md-6 col-sm-12">
       <h4>{{event.name}}</h4>
       <i>{{event.venue}}</i><br/>
       {{event.address}}<br/>
@@ -28,3 +27,4 @@
       <span class="newlines">{{event.comments | newLine }}</span>
     </div>
   </div>
+</div>

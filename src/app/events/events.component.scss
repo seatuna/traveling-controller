@@ -1,3 +1,5 @@
+@import '../../styles';
+
 h4, h5 {
   margin: 0;
 }
@@ -35,4 +37,31 @@ h4, h5 {
 .venue-img {
   margin: 10px;
   vertical-align: middle;
+}
+
+@media (max-width: $small-screen) {
+  h4 {
+    font-size: 1.4em;
+  }
+
+  .events {
+    font-size: 1.2em;
+  }
+
+  .row-container {
+    display: block;
+    padding: 0;
+  }
+
+  .venue-img {
+    display: block;
+    opacity: .2;
+    position: absolute;
+  }
+}
+
+@media (min-width: $small-screen) {
+  .btn-group.btn-filter {
+    float: right;
+  }
 }
