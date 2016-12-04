@@ -1,0 +1,34 @@
+@import '../../styles';
+
+.contact-info {
+  font-size: 1.5em;
+  margin: auto;
+  margin-left: 30px;
+}
+
+.contact-detail:hover {
+  color: $tc-black;
+  cursor: pointer;
+}
+
+.container {
+  display: inline-flex;
+}
+
+.fa {
+  margin: 10px;
+}
+
+@media (max-width: $small-screen) {
+  .contact-info {
+    margin-left: 0;
+  }
+
+  .container {
+    display: block;
+  }
+
+  img {
+    width: 100%;
+  }
+}

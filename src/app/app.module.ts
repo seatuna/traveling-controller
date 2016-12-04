@@ -11,18 +11,21 @@ import { NewLinePipe } from './shared/new-line.pipe';
 
 import { DropdownModule } from 'ng2-bootstrap/components/dropdown';
 import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
 
 const appRoutes: Routes = [
   { path: '', component: EventsComponent },
   { path: 'about', component: AboutComponent },
-]
+  { path: 'contact', component: ContactComponent }
+];
 
 @NgModule({
   declarations: [
     AppComponent,
     EventsComponent,
     NewLinePipe,
-    AboutComponent
+    AboutComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

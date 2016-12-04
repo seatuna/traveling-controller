@@ -1,10 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
 $black: #000;
 $red: #c72732;
+$tc-black: #333c48;
 $white: #fff;
 
 $small-screen: 550px;
 
 body {
   color: $red;
+}
+
+a {
+  color: $red;
+}
+
+a:hover {
+  color: $tc-black;
+  text-decoration: none;
 }

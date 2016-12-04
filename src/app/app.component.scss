@@ -5,13 +5,13 @@ body {
 }
 
 .navbar {
-  background-color: #333c48;
+  background-color: $tc-black;
   border-radius: 0;
   margin-bottom: 0;
 }
 
 .navbar-default {
-  border-color: #333c48;
+  border-color: $tc-black;
 }
 
 .navbar-nav>li {
