@@ -20,7 +20,7 @@ body {
   font-weight: bold;
   padding: 15px;
 
-  @media handheld and (max-width: $mobile-screen), screen and (max-width: $small-screen) {
+  @media handheld and (max-device-width: $mobile-screen), screen and (max-width: $small-screen) {
     font-size: 1.2em;
     padding: 0;
 
@@ -30,7 +30,7 @@ body {
   }
 }
 
-@media handheld and (max-width: $mobile-screen), screen and (max-width: $small-screen) {
+@media handheld and (max-device-width: $mobile-screen), screen and (max-width: $small-screen) {
   .tc-logo-img {
     margin-bottom: 50px;
     margin-top: 50px;
