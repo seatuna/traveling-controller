@@ -9,7 +9,7 @@ li {
   padding: .2em;
 }
 
-@media handheld and (max-device-width: $mobile-screen), screen and (max-width: $small-screen) {
+@media screen and (max-width: $small-screen), screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) {
   div {
     font-size: 1.5em;
   }
