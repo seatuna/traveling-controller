@@ -19,7 +19,7 @@
   margin: 10px;
 }
 
-@media (max-width: $small-screen) {
+@media (max-device-width: $mobile-screen), (max-width: $small-screen) {
   .contact-info {
     margin-left: 0;
   }
